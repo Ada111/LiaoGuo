@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.lbk.app.weiliao"
+    android:id="@+id/mainweixin"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#eee" >  
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbar_01_nomal"
+        android:layout_alignParentBottom="true">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="微聊"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"/>
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/iv_appicon"
+	            android:layout_centerVertical="true"
+	            android:src="@drawable/image_line"
+	            android:paddingLeft="10dip"
+	            android:paddingRight="10dip"/>
+	        <RelativeLayout 
+	            android:layout_width="45dip"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone"
+	            android:background="@drawable/top_menu_bg"
+	             android:layout_alignParentRight="true"
+	            android:id="@+id/rl_add_friend">
+		        <ImageView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:src="@drawable/v2_ic_add_friends"
+		            android:paddingLeft="10dip"
+		            android:paddingRight="10dip"/>
+        	</RelativeLayout>
+        	<RelativeLayout 
+	            android:layout_width="45dip"
+	            android:layout_height="wrap_content"
+	            android:id="@+id/rl_add_chat"
+	            android:background="@drawable/top_menu_bg"
+	             android:layout_alignParentRight="true">
+		        <ImageView 
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"
+		            android:src="@drawable/v2_ic_chat"
+		            android:paddingLeft="10dip"
+		            android:paddingRight="10dip"/>
+            
+        	</RelativeLayout>
+    </RelativeLayout>
+
+    <com.lbk.app.weiliao.ui.views.TitlePageIndicator
+        android:id="@+id/indicator"
+        android:padding="10dip"
+        android:layout_height="30dip"
+        android:layout_width="fill_parent"
+        android:background="@drawable/bottom_bar"
+        app:footerColor="#5da8eb"
+        app:footerLineHeight="1dp"
+        app:footerIndicatorStyle="underline"
+        app:footerIndicatorHeight="1dp"
+        app:footerIndicatorUnderlinePadding="40dp"
+        app:textColor="#7d8d9d"
+        app:textSize="12sp"
+        app:topPadding="5dip"
+        app:selectedColor="#5da8eb"
+        app:selectedBold="false"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tabpager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>

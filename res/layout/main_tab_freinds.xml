@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/welcome_bg">
+    
+    <include layout="@layout/v2_common_searchbar"/>
+    
+    <ListView 
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:id="@+id/lv_friends"
+        android:layout_weight="1">
+        
+    </ListView>
+    
+    <!-- <com.lbk.app.weiliao.ui.views.StickyListHeadersListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff444444"
+        android:clipToPadding="false"
+        android:dividerHeight="5dp"
+        android:fastScrollEnabled="true"
+        android:padding="16dip"
+        android:scrollbarStyle="outsideOverlay"
+        tools:listitem="@layout/test_list_item_layout" />
+
+    <TextView
+        android:id="@+id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Empty!"
+        android:textSize="30sp"
+        android:visibility="gone" /> -->
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:background="@drawable/topbar_01_nomal">
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通讯录"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFFFF"/>
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topbar_02_nomal"
+            android:id="@+id/rl_addFriend">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:src="@drawable/v2_ic_add_friends"
+	            android:paddingLeft="10dip"
+	            android:paddingRight="10dip"/>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

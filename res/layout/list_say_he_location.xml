@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#EAEAEA"
+    android:id="@+id/layout_bj"
+    android:gravity="center_vertical"
+    android:padding="5dip" >
+
+    <ImageView
+        android:id="@+id/messagegedetail_rov_icon"
+        android:layout_width="40.0dip"
+        android:layout_height="40.0dip"
+        android:background="@drawable/ic_launcher"
+         />
+    <TextView
+        android:id="@+id/messagegedetail_rov"
+        android:layout_width="5.0dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/messagegedetail_rov_icon"
+        />
+    
+                <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2012-2-12,12.23"
+        android:id="@+id/talk_time"
+        android:layout_toRightOf = "@id/messagegedetail_rov_icon"
+        android:layout_marginLeft="5dip"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/messagegedetail_rov"
+        android:background="@drawable/v2_img_chats_bg_01" 
+        android:layout_marginLeft="5dip"
+        android:layout_below="@id/talk_time"
+        android:layout_marginTop="5dip"
+        >
+
+        <TextView
+            android:id="@+id/messagedetail_row_text"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:text="我现在在这里"
+            android:textColor="#C7C7C7"
+            android:textSize="15.0dip" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messagegedetail_location"
+            android:background="@drawable/title_location_nor" 
+            />
+    </LinearLayout>
+
+</RelativeLayout>
